@@ -1,0 +1,45 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#todo-list {
+  border-radius: 2rem;
+  padding: 3rem 1rem;
+  max-height: 90vh;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  max-width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.todo {
+  list-style-type: none;
+  background-color: rgb(176, 152, 176);
+  padding: 0.6rem 0.2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+}
+.todo p {
+  width: 80%;
+  display: inline-block;
+  white-space: pre-line;
+  word-wrap: break-word;
+}

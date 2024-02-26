@@ -26,6 +26,21 @@ body {
   align-items: center;
   overflow-y: auto;
 }
+@media screen and (min-width: 1024px) {
+    #todo-list{
+        grid-template-columns: repeat(3, auto);  
+    }
+  }
+@media screen and (max-width: 1024px) {
+    #todo-list{
+        grid-template-columns: repeat(2, auto);  
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #todo-list{
+        grid-template-columns: repeat(1, auto);  
+    }
+  }
 .todo {
   list-style-type: none;
   background-color: rgb(176, 152, 176);
